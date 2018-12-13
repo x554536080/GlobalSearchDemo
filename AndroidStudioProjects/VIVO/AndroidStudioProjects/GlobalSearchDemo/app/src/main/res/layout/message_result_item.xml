@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/message_result_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="短信"
+            android:textColor="#CFFFFFFF" />
+
+        <TextView
+            android:id="@+id/message_deploy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="展开"
+            android:textColor="#CFFFFFFF" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/message_result_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/search_item_pressed"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_item_contact"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:textColor="#CFFFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/message_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLength="23"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:singleLine="true"
+                android:textColor="#7FFFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/message_divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="#AFCFCFCF"
+            android:visibility="gone">
+
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

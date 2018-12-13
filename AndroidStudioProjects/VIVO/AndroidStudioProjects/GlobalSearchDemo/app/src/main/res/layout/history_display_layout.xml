@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_display_layout_whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="8"
+            android:paddingStart="18dp"
+            android:text="搜索历史"
+            android:textColor="#7FFFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/clear_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0.6"
+            android:padding="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rubbish_bin_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_item_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+    </LinearLayout>
+
+
+</LinearLayout>
